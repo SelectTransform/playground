@@ -1,6 +1,6 @@
 <html>
 <script src='https://rawgit.com/intercellular/cell/inherit/cell.js'></script>
-<script src='https://rawgit.com/SelectTransform/st.js/master/st.js'></script>
+<script src='https://rawgit.com/SelectTransform/st.js/develop/st.js'></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css" rel='stylesheet'>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.css" rel='stylesheet'>
 <link href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/theme/railscasts.css' rel='stylesheet'>
@@ -24,7 +24,7 @@ html, body {
 <script>
 var content = {
   source: "var data = {\n  items: [1,2,3,100,10,19]\n};\nvar template = {\n  labels: {\n    \"{{#each items}}\": {\n      type: \"label\",\n      text: \"{{this}}\"\n    }\n  }\n}",
-  code: "JSON.select(data)\n\t.transformWith(template)\n\t.root()"
+  code: "ST.select(data)\n\t.transformWith(template)\n\t.root()"
 };
 
 var editor = {
